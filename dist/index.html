@@ -7,28 +7,79 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="Auto Posto Virmond e Restaurante Cantagalo. Sua parada completa na BR-277, em Virmond, Paraná." />
     <title>Auto Posto Virmond & Restaurante Cantagalo — Sua parada na BR-277</title>
-    <link rel="preload" href="assets/posto-virmond-capa.webp" as="image" media="(min-width: 561px)" />
-    <link rel="preload" href="assets/posto-virmond-capa-mobile.webp" as="image" media="(max-width: 560px)" />
+    <link rel="preload" href="assets/hero-parada.webp" as="image" media="(min-width: 561px)" />
+    <link rel="preload" href="assets/hero-parada-mobile.webp" as="image" media="(max-width: 560px)" />
+    <link rel="icon" href="assets/favicon-64.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="canonical" href="https://paradavirmond.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paradavirmond.com.br/" />
+    <meta property="og:image" content="https://paradavirmond.com.br/assets/hero-parada.webp" />
+    <meta property="og:image:alt" content="Auto Posto Virmond e Restaurante Cantagalo à noite, na BR-277" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Auto Posto Virmond & Restaurante Cantagalo" />
+    <meta property="og:description" content="Sua parada completa na BR-277, em Virmond (PR): posto, conveniência e comida caseira no mesmo lugar." />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "GasStation",
+          "name": "Auto Posto Virmond",
+          "url": "https://paradavirmond.com.br/",
+          "logo": "https://paradavirmond.com.br/assets/logo-virmond-512.png",
+          "image": "https://paradavirmond.com.br/assets/hero-parada.webp",
+          "paymentAccepted": "Pix, cartão de crédito, cartão de débito, cartões frota (Fitcard, Prime, Neo, Loop, Link, Fitmoby, Ticket Log)",
+          "telephone": "+55 42 99938-6409",
+          "address": { "@type": "PostalAddress", "streetAddress": "BR-277, Km 430 + 400 m", "addressLocality": "Virmond", "addressRegion": "PR", "addressCountry": "BR" },
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "06:00", "closes": "21:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "06:00", "closes": "20:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "20:00" }
+          ],
+          "geo": { "@type": "GeoCoordinates", "latitude": -25.3781418, "longitude": -52.2030514 },
+          "hasMap": "https://www.google.com/maps?cid=3461525381990737474",
+          "sameAs": ["https://www.instagram.com/autoposto_virmond/"]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Restaurante Cantagalo",
+          "url": "https://paradavirmond.com.br/#restaurante",
+          "image": "https://paradavirmond.com.br/assets/buffet-real.webp",
+          "paymentAccepted": "Pix, cartão de crédito, cartão de débito",
+          "servesCuisine": "Comida caseira brasileira",
+          "telephone": "+55 42 99155-7249",
+          "address": { "@type": "PostalAddress", "streetAddress": "BR-277, Km 430 + 400 m", "addressLocality": "Virmond", "addressRegion": "PR", "addressCountry": "BR" },
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "11:00", "closes": "14:30" }
+          ],
+          "geo": { "@type": "GeoCoordinates", "latitude": -25.3777962, "longitude": -52.2032944 },
+          "hasMap": "https://www.google.com/maps?cid=15107965647772351014",
+          "sameAs": ["https://www.instagram.com/restaurantecantagalopr/"]
+        }
+      ]
+    </script>
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <header class="site-header" id="topo">
-      <a class="brand" href="#topo" aria-label="Auto Posto Virmond e Restaurante Cantagalo — início">
-        <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
-        <span class="brand-text"><strong>VIRMOND</strong><small>POSTO & CANTAGALO</small></span>
+      <a class="brand" href="#topo" aria-label="Auto Posto Virmond — início">
+        <img class="brand-logo" src="assets/logo-virmond.webp" alt="" width="200" height="240" />
+        <span class="brand-text"><strong>VIRMOND</strong><small>AUTO POSTO</small></span>
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#experiencia">A experiência</a>
         <a href="#posto">O posto</a>
         <a href="#restaurante">O restaurante</a>
         <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
       </nav>
-      <a class="header-route" href="https://www.google.com/maps/search/?api=1&query=Auto+Posto+Virmond+BR-277+Km+430%2B400m+Virmond+PR" target="_blank" rel="noopener noreferrer">
-        Como chegar <span aria-hidden="true">↗</span>
+      <a class="header-route" href="#localizacao">
+        Como chegar <span aria-hidden="true">↓</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </header>
@@ -38,19 +89,20 @@
       <a href="#posto">O posto</a>
       <a href="#restaurante">O restaurante</a>
       <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
     </nav>
 
     <main id="conteudo">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-image" role="img" aria-label="Foto real do Auto Posto Virmond à noite, com cobertura Petrobras e área de abastecimento"></div>
+        <div class="hero-image" role="img" aria-label="Auto Posto Virmond e Restaurante Cantagalo à noite, com a cobertura Petrobras e a entrada do restaurante"></div>
         <div class="hero-shade"></div>
         <div class="hero-content wrap">
           <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> BR-277 · KM 430 + 400 M · VIRMOND / PR</div>
-          <h1 id="hero-title">Sua parada<br /><em>completa</em> na<br />BR-277<span class="period">.</span></h1>
+          <h1 id="hero-title"><span class="hero-name">VIRMOND</span><span class="hero-sub">Posto e Restaurante</span></h1>
           <p>Um lugar para seguir bem: abastecimento, conveniência e o sabor de uma boa comida caseira no mesmo destino.</p>
           <div class="hero-actions">
-            <a class="button button-light" href="#experiencia">Conheça a experiência <span aria-hidden="true">↗</span></a>
-            <a class="text-link text-link-light" href="https://www.google.com/maps/search/?api=1&query=Auto+Posto+Virmond+BR-277+Km+430%2B400m+Virmond+PR" target="_blank" rel="noopener noreferrer">Traçar rota <span aria-hidden="true">↗</span></a>
+            <button class="button button-whats" type="button" data-wa-open data-origem="capa"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.1-1.47-1.1-2.81 0-1.33.7-1.99.95-2.26.24-.27.53-.34.71-.34h.51c.16 0 .38-.06.6.46.24.55.8 1.92.87 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.6-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg> Chamar no WhatsApp</button>
+            <a class="text-link text-link-light" href="#localizacao">Traçar rota <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div class="hero-bottom wrap">
@@ -73,15 +125,16 @@
         </div>
       </section>
 
-      <section class="duo-intro" aria-label="Posto e restaurante">
-        <div class="duo-photo duo-photo-road" role="img" aria-label="Imagem ilustrativa de posto na estrada ao anoitecer"></div>
-        <div class="duo-photo duo-photo-food" role="img" aria-label="Imagem ilustrativa de almoço caseiro brasileiro"></div>
-        <div class="duo-overlay"></div>
+      <section class="duo-intro" aria-labelledby="duo-title">
         <div class="duo-content wrap reveal">
           <span class="eyebrow">DUAS ESSÊNCIAS, UMA SÓ PARADA</span>
-          <h2>Energia para<br />o carro. <em>Sabor</em><br />para a viagem.</h2>
+          <h2 id="duo-title">Energia para<br />o carro. <em>Sabor</em><br />para a viagem.</h2>
         </div>
-        <span class="duo-caption">AUTO POSTO VIRMOND <span aria-hidden="true">×</span> RESTAURANTE CANTAGALO</span>
+        <div class="duo-grid reveal">
+          <img src="assets/duo-posto.webp" alt="Pista de abastecimento do Auto Posto Virmond à noite, com a cobertura Petrobras" loading="lazy" />
+          <img src="assets/buffet-real.webp" alt="Buffet de comida caseira do Restaurante Cantagalo" loading="lazy" />
+        </div>
+        <p class="duo-caption wrap">AUTO POSTO VIRMOND <span aria-hidden="true">×</span> RESTAURANTE CANTAGALO</p>
       </section>
 
       <section class="service service-station" id="posto" aria-labelledby="station-title">
@@ -92,13 +145,18 @@
             <h2 id="station-title" class="display-title">Mais do que<br /><em>abastecer.</em></h2>
             <p>Combustível de qualidade Petrobras, conveniência completa e cuidados para o seu veículo. Uma parada pensada para você retomar a estrada com tranquilidade.</p>
             <div class="service-points" aria-label="Serviços do posto">
-              <span>Combustível Petrobras</span><span>Conveniência</span><span>Troca de óleo</span><span>Lubrificação</span><span>Espaço família</span>
+              <span>Combustível Petrobras</span><span>Conveniência</span><span>Café e lanches</span><span>Espaço de descanso</span><span>Boutique de presentes</span><span>Gás Liquigás</span><span>Troca de óleo</span><span>Lubrificação</span>
             </div>
-            <a class="underlined-link" href="https://www.instagram.com/autoposto_virmond/" target="_blank" rel="noopener noreferrer">Conheça o posto no Instagram <span aria-hidden="true">↗</span></a>
+            <div class="service-links"><a class="underlined-link" href="https://www.instagram.com/autoposto_virmond/" target="_blank" rel="noopener noreferrer">Conheça o posto no Instagram <span aria-hidden="true">↗</span></a><a class="underlined-link" data-wa="posto" href="https://wa.me/5542999386409" target="_blank" rel="noopener noreferrer">WhatsApp do posto <span aria-hidden="true">↗</span></a></div>
           </div>
           <div class="station-visual reveal">
-            <div class="station-visual-photo"><img src="assets/conveniencia-real.webp" alt="Interior real da conveniência do Auto Posto Virmond" loading="lazy" /></div>
-            <div class="photo-label"><span class="photo-dot"></span> CONVENIÊNCIA DO AUTO POSTO VIRMOND</div>
+            <div class="collage collage-posto">
+              <figure class="collage-item ci-1"><img src="assets/conv-loja.webp" alt="Interior da conveniência do Auto Posto Virmond, com gôndolas de snacks, doces e bebidas" loading="lazy" /></figure>
+              <figure class="collage-item ci-2"><img src="assets/conv-cafe.webp" alt="Espaço de café com mesas, máquina de café e geladeiras de bebidas" loading="lazy" /></figure>
+              <figure class="collage-item ci-3"><img src="assets/conv-bebidas.webp" alt="Geladeiras de bebidas e freezer de sorvetes na conveniência" loading="lazy" /></figure>
+              <figure class="collage-item ci-4"><img src="assets/conv-boutique.webp" alt="Boutique de presentes com chinelos, toalhas, camisetas e utilidades" loading="lazy" /></figure>
+            </div>
+            <div class="photo-label"><span class="photo-dot"></span> CONVENIÊNCIA E BOUTIQUE DO AUTO POSTO VIRMOND</div>
             <div class="visual-index" aria-hidden="true">V / 01</div>
           </div>
         </div>
@@ -107,9 +165,12 @@
       <section class="service service-restaurant" id="restaurante" aria-labelledby="restaurant-title">
         <div class="wrap restaurant-grid">
           <div class="restaurant-visual reveal">
-            <div class="restaurant-main-photo"><img src="assets/food-editorial.webp" alt="Imagem ilustrativa de uma refeição caseira brasileira" loading="lazy" /></div>
-            <div class="restaurant-real-photo"><img src="assets/buffet-real.webp" alt="Buffet real do Restaurante Cantagalo" loading="lazy" /></div>
-            <div class="photo-label light-label"><span class="photo-dot"></span> O BUFFET DO CANTAGALO</div>
+            <div class="collage collage-rest">
+              <figure class="collage-item cr-1"><img src="assets/rest-balcao.webp" alt="Balcão com banquetas e floreiras de madeira no Restaurante Cantagalo" loading="lazy" /></figure>
+              <figure class="collage-item cr-2"><img src="assets/rest-salao-mesas.webp" alt="Mesas do salão do Restaurante Cantagalo com luminárias de palha e o buffet ao fundo" loading="lazy" /></figure>
+              <figure class="collage-item cr-3"><img src="assets/rest-buffet.webp" alt="Buffet de comida caseira com saladas e pratos quentes" loading="lazy" /></figure>
+            </div>
+            <div class="photo-label light-label"><span class="photo-dot"></span> RESTAURANTE CANTAGALO</div>
           </div>
           <div class="service-copy restaurant-copy reveal">
             <div class="section-kicker"><span class="kicker-number">03 / RESTAURANTE CANTAGALO</span><span class="kicker-rule"></span></div>
@@ -117,20 +178,8 @@
             <h2 id="restaurant-title" class="display-title">Sente-se.<br /><em>Aproveite.</em></h2>
             <p>O sabor acolhedor da comida caseira em um restaurante anexo ao posto. Para quem mora na região ou está de passagem, o Cantagalo transforma o almoço em um bom motivo para parar.</p>
             <div class="restaurant-signature"><span class="signature-mark" aria-hidden="true">✳</span><span>Restaurante Cantagalo<br /><small>Comida caseira na BR-277</small></span></div>
-            <a class="underlined-link" href="https://www.instagram.com/restaurantecantagalopr/" target="_blank" rel="noopener noreferrer">Conheça o restaurante no Instagram <span aria-hidden="true">↗</span></a>
+            <div class="service-links"><a class="underlined-link" href="https://www.instagram.com/restaurantecantagalopr/" target="_blank" rel="noopener noreferrer">Conheça o restaurante no Instagram <span aria-hidden="true">↗</span></a><a class="underlined-link" data-wa="restaurante" href="https://wa.me/5542991557249" target="_blank" rel="noopener noreferrer">WhatsApp do restaurante <span aria-hidden="true">↗</span></a></div>
           </div>
-        </div>
-      </section>
-
-      <section class="moment-section" aria-labelledby="moment-title">
-        <div class="wrap moment-heading reveal">
-          <span class="eyebrow">A PARADA EM DETALHES</span>
-          <h2 id="moment-title">Pequenos momentos.<br /><em>Uma viagem melhor.</em></h2>
-        </div>
-        <div class="moment-gallery">
-          <figure class="moment-card moment-card-one reveal"><img src="assets/conveniencia-real.webp" alt="Prateleiras da conveniência do Auto Posto Virmond" loading="lazy" /><figcaption>01 <span>Uma conveniência para a sua rota</span></figcaption></figure>
-          <figure class="moment-card moment-card-two reveal"><img src="assets/buffet-real.webp" alt="Massa e outros pratos no buffet do Restaurante Cantagalo" loading="lazy" /><figcaption>02 <span>Comida caseira que convida a ficar</span></figcaption></figure>
-          <figure class="moment-card moment-card-three reveal"><img src="assets/buffet-detail-real.webp" alt="Detalhe dos pratos servidos no buffet do Cantagalo" loading="lazy" /><figcaption>03 <span>O cuidado está nos detalhes</span></figcaption></figure>
         </div>
       </section>
 
@@ -142,24 +191,82 @@
             <h2 id="location-title">No caminho<br />certo para <em>você.</em></h2>
             <p>Estamos na BR-277, em Virmond, no Paraná. Faça uma pausa, abasteça e descubra o Restaurante Cantagalo no mesmo local.</p>
             <div class="location-address"><span>ENDEREÇO</span><strong>BR-277 · Km 430 + 400 m<br />Virmond, Paraná</strong></div>
-            <a class="button button-gold" href="https://www.google.com/maps/search/?api=1&query=Auto+Posto+Virmond+BR-277+Km+430%2B400m+Virmond+PR" target="_blank" rel="noopener noreferrer">Abrir rota no Google Maps <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="route-art reveal" aria-hidden="true">
-            <div class="route-topline">BR-277 <span>VIRMOND · PR</span></div>
-            <svg viewBox="0 0 620 490" preserveAspectRatio="xMidYMid meet"><path class="route-line-ghost" d="M-38 400 C120 390 95 226 257 253 S400 338 674 48"/><path class="route-line" d="M-38 400 C120 390 95 226 257 253 S400 338 674 48"/></svg>
-            <span class="route-origin">O CAMINHO</span><span class="route-destination"><span class="route-pulse"></span> SUA PARADA</span>
-            <div class="route-number">430<span>+ 400 M</span></div>
+          <div class="map-embed reveal">
+            <iframe src="https://maps.google.com/maps?cid=3461525381990737474&amp;z=15&amp;hl=pt-BR&amp;output=embed" title="Mapa com a localização do Auto Posto Virmond e do Restaurante Cantagalo na BR-277" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
+        </div>
+      </section>
+
+      <section class="contact section-light" id="contato" aria-labelledby="contact-title">
+        <div class="wrap">
+          <div class="contact-heading reveal">
+            <div class="section-kicker"><span class="kicker-number">04 / HORÁRIOS E CONTATO</span><span class="kicker-rule"></span></div>
+            <h2 id="contact-title" class="display-title">Fale com a<br /><em>gente.</em></h2>
+          </div>
+          <div class="contact-grid">
+            <article class="contact-card reveal" data-hours='{"0":["07:00","20:00"],"1":["06:00","21:00"],"2":["06:00","21:00"],"3":["06:00","21:00"],"4":["06:00","21:00"],"5":["06:00","21:00"],"6":["06:00","20:00"]}'>
+              <div class="contact-card-top"><span class="contact-overline">Auto Posto Virmond</span><span class="open-status" aria-live="polite"></span></div>
+              <h3>Posto e conveniência</h3>
+              <dl class="hours">
+                <div><dt>Segunda a sexta</dt><dd>06:00 – 21:00</dd></div>
+                <div><dt>Sábado</dt><dd>06:00 – 20:00</dd></div>
+                <div><dt>Domingo</dt><dd>07:00 – 20:00</dd></div>
+              </dl>
+              <div class="contact-actions">
+                <a class="button button-dark" data-wa="posto" href="https://wa.me/5542999386409" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+                <a class="contact-phone" href="tel:+5542999386409">(42) 99938-6409</a>
+              </div>
+            </article>
+            <article class="contact-card reveal" data-hours='{"1":["11:00","14:30"],"2":["11:00","14:30"],"3":["11:00","14:30"],"4":["11:00","14:30"],"5":["11:00","14:30"],"6":["11:00","14:30"]}'>
+              <div class="contact-card-top"><span class="contact-overline">Restaurante Cantagalo</span><span class="open-status" aria-live="polite"></span></div>
+              <h3>Almoço</h3>
+              <dl class="hours">
+                <div><dt>Segunda a sábado</dt><dd>11:00 – 14:30</dd></div>
+                <div><dt>Domingo</dt><dd>Fechado</dd></div>
+              </dl>
+              <div class="contact-actions">
+                <a class="button button-dark" data-wa="restaurante" href="https://wa.me/5542991557249" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+                <a class="contact-phone" href="tel:+5542991557249">(42) 99155-7249</a>
+              </div>
+            </article>
+          </div>
+          <div class="payments reveal">
+            <div class="payments-group">
+              <span class="payments-title">Formas de pagamento</span>
+              <ul class="payment-list"><li>Pix</li><li>Cartões de crédito e débito</li></ul>
+            </div>
+            <div class="payments-group">
+              <span class="payments-title">Cartões frota aceitos no posto</span>
+              <ul class="payment-list"><li>Fitcard</li><li>Prime</li><li>Neo</li><li>Loop</li><li>Link</li><li>Fitmoby</li><li>Ticket Log</li></ul>
+            </div>
+          </div>
+          <p class="contact-note">Horários podem variar em feriados.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-main">
-        <div><span class="footer-eyebrow">AUTO POSTO VIRMOND & RESTAURANTE CANTAGALO</span><h2>O melhor do caminho<br />começa <em>na parada.</em></h2></div>
-        <div class="footer-links"><a href="https://www.instagram.com/autoposto_virmond/" target="_blank" rel="noopener noreferrer">Instagram do posto <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/restaurantecantagalopr/" target="_blank" rel="noopener noreferrer">Instagram do restaurante <span aria-hidden="true">↗</span></a><a href="https://www.google.com/maps/search/?api=1&query=Auto+Posto+Virmond+BR-277+Km+430%2B400m+Virmond+PR" target="_blank" rel="noopener noreferrer">Como chegar <span aria-hidden="true">↗</span></a></div>
+        <div><img class="footer-logo" src="assets/logo-virmond.webp" alt="Logo do Auto Posto Virmond" width="200" height="240" loading="lazy" /><span class="footer-eyebrow">AUTO POSTO VIRMOND & RESTAURANTE CANTAGALO</span><h2>O melhor do caminho<br />começa <em>na parada.</em></h2></div>
+        <div class="footer-links"><a data-wa="posto" href="https://wa.me/5542999386409" target="_blank" rel="noopener noreferrer">Posto · (42) 99938-6409 <span aria-hidden="true">↗</span></a><a data-wa="restaurante" href="https://wa.me/5542991557249" target="_blank" rel="noopener noreferrer">Restaurante · (42) 99155-7249 <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/autoposto_virmond/" target="_blank" rel="noopener noreferrer">Instagram do posto <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/restaurantecantagalopr/" target="_blank" rel="noopener noreferrer">Instagram do restaurante <span aria-hidden="true">↗</span></a><a href="#localizacao">Como chegar <span aria-hidden="true">↓</span></a></div>
       </div>
-      <div class="wrap footer-bottom"><span>© 2026 Auto Posto Virmond · Restaurante Cantagalo</span><span>Conceito visual para revisão. Foto de capa do perfil do Auto Posto Virmond no Google Maps; imagens editoriais ilustrativas e fotos internas dos perfis públicos do cliente.</span><a href="#topo">Voltar ao topo ↑</a></div>
+      <div class="wrap footer-bottom"><span>© 2026 Auto Posto Virmond · Restaurante Cantagalo</span><span>BR-277 · Km 430 + 400 m · Virmond, Paraná</span><a href="#topo">Voltar ao topo ↑</a></div>
     </footer>
+    <dialog class="wa-sheet" id="wa-sheet" aria-labelledby="wa-sheet-title">
+      <div class="wa-sheet-inner">
+        <button class="wa-sheet-close" type="button" aria-label="Fechar">×</button>
+        <span class="eyebrow">Atendimento pelo WhatsApp</span>
+        <h2 id="wa-sheet-title">Com quem você quer falar?</h2>
+        <a class="wa-option" data-wa="posto" href="https://wa.me/5542999386409" data-hours='{"0":["07:00","20:00"],"1":["06:00","21:00"],"2":["06:00","21:00"],"3":["06:00","21:00"],"4":["06:00","21:00"],"5":["06:00","21:00"],"6":["06:00","20:00"]}'>
+          <span><strong>Posto e conveniência</strong><small>Seg a sex 06h–21h · Sáb 06h–20h · Dom 07h–20h</small></span>
+          <span class="open-status"></span>
+        </a>
+        <a class="wa-option" data-wa="restaurante" href="https://wa.me/5542991557249" data-hours='{"1":["11:00","14:30"],"2":["11:00","14:30"],"3":["11:00","14:30"],"4":["11:00","14:30"],"5":["11:00","14:30"],"6":["11:00","14:30"]}'>
+          <span><strong>Restaurante Cantagalo</strong><small>Almoço · Seg a sáb 11h–14h30</small></span>
+          <span class="open-status"></span>
+        </a>
+      </div>
+    </dialog>
   </body>
 </html>
