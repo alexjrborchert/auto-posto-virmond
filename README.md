@@ -27,7 +27,7 @@ Abra `http://localhost:4173`.
 - A seção de localização usa o mapa incorporado do Google Maps (`?cid=` do perfil do posto, sem chave de API). O próprio mapa tem o botão "Abrir no Maps".
 - Prioridade de layout: celular. No celular as colagens e o mapa ocupam a largura toda da tela.
 - As colagens (`.collage`, `.ci-*`, `.cr-*` no CSS) usam posições em porcentagem e `aspect-ratio` igual à proporção de cada foto, então nenhuma foto é cortada e a composição funciona no celular. Ao trocar uma foto, ajuste o `aspect-ratio` do item correspondente.
-- `duo-buffet.webp`: buffet de saladas (seção "Energia para o carro. Sabor para a viagem.").
+- `duo-buffet.webp`: macarrão e gratinado do buffet (foto do Instagram do restaurante, recortada sem o fundo desfocado) (seção "Energia para o carro. Sabor para a viagem.").
 - `logo-virmond.webp`, `logo-virmond-512.png`, `favicon-64.png`, `apple-touch-icon.png`: geradas a partir do PDF da logo oficial (versão 02).
 - Nenhuma foto se repete na página (exceto a logo, no topo e no rodapé).
 - As fotos foram recortadas para não mostrar preços (buffet e gás), que mudam com frequência.
