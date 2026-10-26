@@ -106,6 +106,17 @@ document.querySelectorAll('[data-wa-open]').forEach((button) => {
   });
 });
 
+// Botão flutuante: aparece só depois que o botão de WhatsApp da capa sai da tela.
+const floatButton = document.querySelector('.wa-float');
+const heroButton = document.querySelector('.hero-actions [data-wa-open]');
+if (floatButton && heroButton && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([entry]) => {
+    floatButton.classList.toggle('is-visible', !entry.isIntersecting);
+  }).observe(heroButton);
+} else {
+  floatButton?.classList.add('is-visible');
+}
+
 sheet?.querySelector('.wa-sheet-close').addEventListener('click', () => sheet.close());
 sheet?.addEventListener('click', (event) => { if (event.target === sheet) sheet.close(); });
 

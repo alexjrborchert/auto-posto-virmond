@@ -35,7 +35,7 @@ Abra `http://localhost:4173`.
 ## WhatsApp e rastreamento
 
 - Os números e as mensagens prontas de cada setor ficam no objeto `WHATSAPP`, no início de `dist/script.js`. Todos os links com `data-wa="posto"` ou `data-wa="restaurante"` usam essa configuração. Os números escritos como texto (cartões de contato, rodapé e JSON-LD) precisam ser trocados à mão no `index.html`.
-- O botão principal da capa (`data-wa-open`) abre a escolha entre posto e restaurante. Com `?setor=posto` ou `?setor=restaurante` no link do anúncio, ele vai direto para o setor.
+- O botão principal da capa (`data-wa-open`) abre a escolha entre posto e restaurante. O botão flutuante (canto inferior direito) faz o mesmo e só aparece depois que o botão da capa sai da tela. Com `?setor=posto` ou `?setor=restaurante` no link do anúncio, ele vai direto para o setor.
 - Se o link tiver `utm_campaign`, a mensagem pronta inclui `[ref: campanha]`, para o atendente saber de onde a pessoa veio.
 - Cada clique dispara `dataLayer.push({event: 'whatsapp_click', setor, origem})` e, quando o Pixel e o GA4 estiverem instalados, `fbq('track', 'Contact')` e `gtag('event', 'generate_lead')`. Falta só colar os códigos do Meta Pixel e do GA4/GTM no `<head>`.
 - "Traçar rota" e "Como chegar" levam ao mapa da própria página (`#localizacao`), sem sair do site.
