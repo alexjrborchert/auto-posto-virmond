@@ -2,7 +2,7 @@
 // todos os botões da página usam esta configuração.
 const WHATSAPP = {
   posto: { numero: '5542999386409', mensagem: 'Olá! Vim pelo site do Auto Posto Virmond.' },
-  restaurante: { numero: '5542991557249', mensagem: 'Olá! Vim pelo site do Restaurante Cantagalo e quero saber o cardápio de hoje.' },
+  restaurante: { numero: '5542991557249', mensagem: 'Olá! Vim pelo site do Restaurante Posto Virmond e quero saber o cardápio de hoje.' },
 };
 
 const header = document.querySelector('.site-header');
