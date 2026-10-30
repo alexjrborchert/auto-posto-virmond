@@ -1,2 +1,5 @@
 # Configuração local de prévia (só deste computador)
 .claude/
+
+# Pacote .zip gerado para enviar à Hostinger
+entrega/
