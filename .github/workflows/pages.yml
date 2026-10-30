@@ -1,6 +1,7 @@
-# Publica a pasta dist/ no GitHub Pages a cada envio para a branch main.
-# Prévia: https://alexjrborchert.github.io/auto-posto-virmond/
-name: Publicar prévia
+# O site oficial está em https://paradavirmond.com.br (Hostinger).
+# O endereço antigo da prévia no GitHub Pages só redireciona para ele.
+# Prévia antiga: https://alexjrborchert.github.io/auto-posto-virmond/
+name: Redirecionar prévia antiga
 
 on:
   push:
@@ -27,6 +28,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: redirect
       - id: deployment
         uses: actions/deploy-pages@v4

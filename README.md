@@ -2,9 +2,11 @@
 
 Landing page estática de conceito para reunir o posto e o restaurante em uma experiência premium na BR-277.
 
-## Prévia online
+## Site no ar
 
-https://alexjrborchert.github.io/auto-posto-virmond/ — publicada automaticamente pelo GitHub Pages (`.github/workflows/pages.yml`) a cada envio para a branch `main`.
+https://paradavirmond.com.br, hospedado na Hostinger (domínio no Registro.br, DNS apontando para `lunar`/`solar.dns-parking.com`). Para atualizar, gere um .zip com o conteúdo de `dist/` (incluindo o `.htaccess`) e envie para `public_html` pelo Gerenciador de Arquivos.
+
+O endereço antigo da prévia (https://alexjrborchert.github.io/auto-posto-virmond/) só redireciona para o site oficial (`redirect/` e `.github/workflows/pages.yml`).
 
 ## Prévia local
 
