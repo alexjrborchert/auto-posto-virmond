@@ -22,7 +22,7 @@ Abra `http://localhost:4173`.
 - `dist/styles.css`: layout responsivo e animações.
 - `dist/script.js`: revelação ao rolar, progresso e menu mobile.
 - Todas as fotos são reais, enviadas pelo cliente (outubro de 2026), com leve ajuste de brilho, contraste e saturação, recortadas e convertidas para WebP:
-  - `hero-parada.webp` / `hero-parada-mobile.webp`: posto e restaurante à noite (capa).
+  - `hero-capa.webp` / `hero-capa-mobile.webp`: pista e conveniência à noite (capa, foto escolhida pelo cliente em nov/2026). Só existe em 1179×714; foi ampliada com nitidez e redução de ruído no céu.
   - `duo-posto.webp`: pista de abastecimento à noite.
   - `conv-loja.webp`, `conv-cafe.webp`, `conv-bebidas.webp`, `conv-boutique.webp`: colagem diagonal da conveniência e boutique (seção do posto).
   - `rest-balcao.webp`, `rest-salao-mesas.webp`, `rest-buffet.webp`: colagem diagonal do restaurante (salão recortado para focar nas mesas, sem a entrada e o caixa).
