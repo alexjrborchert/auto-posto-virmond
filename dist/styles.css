@@ -40,3 +40,5 @@
 @media(max-width:560px){.hero{height:780px;min-height:0}.hero-content{padding-bottom:40px}.hero-bottom{padding-bottom:23px}}
 /* Dobra posto × restaurante: foto do posto um pouco mais escura no computador, para o texto ler melhor */
 @media(min-width:561px){.duo-img-posto{filter:brightness(.72)}}
+/* "Duas essências" embaixo do título, na parte mais escura */
+.duo-eyebrow{display:block;margin-top:28px}@media(max-width:560px){.duo-eyebrow{margin-top:18px}}
