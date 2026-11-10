@@ -1,7 +1,7 @@
 # Publica o site na Hostinger (https://paradavirmond.com.br) a cada alteração
 # aprovada na branch main. Envia por FTP só os arquivos de dist/ que mudaram.
 # A senha e o usuário do FTP ficam nos segredos do repositório:
-# Settings > Secrets and variables > Actions > FTP_USERNAME e FTP_PASSWORD.
+# Settings > Secrets and variables > Actions > VIRMOND_HOSTINGER_FTP_USUARIO e VIRMOND_HOSTINGER_FTP_SENHA.
 name: Publicar na Hostinger
 
 on:
@@ -27,7 +27,7 @@ jobs:
           server: 185.239.210.12
           port: 21
           protocol: ftps
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.VIRMOND_HOSTINGER_FTP_USUARIO }}
+          password: ${{ secrets.VIRMOND_HOSTINGER_FTP_SENHA }}
           local-dir: ./dist/
           server-dir: public_html/

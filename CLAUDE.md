@@ -63,7 +63,7 @@ Converse em português do Brasil. O celular é a prioridade: toda mudança visua
 
 1. Commit e push no GitHub (repositório `alexjrborchert/auto-posto-virmond`). A alteração entra na branch `main` (direto ou aprovando um pull request).
 2. A tarefa automática `.github/workflows/hostinger.yml` envia por FTP (FTPS, porta 21, servidor 185.239.210.12) só os arquivos de `dist/` que mudaram para `public_html`. Roda a cada push na `main` que mexe em `dist/`, e também pode ser disparada à mão na aba Actions.
-3. Usuário e senha do FTP ficam nos segredos do repositório (`FTP_USERNAME` e `FTP_PASSWORD`). Nunca pedir a senha na conversa. Se a senha do FTP mudar na Hostinger, atualizar o segredo.
+3. Usuário e senha do FTP ficam nos segredos do repositório (`VIRMOND_HOSTINGER_FTP_USUARIO` e `VIRMOND_HOSTINGER_FTP_SENHA`). Nunca pedir a senha na conversa. Se a senha do FTP mudar na Hostinger, atualizar o segredo.
 4. **Não editar arquivos direto na Hostinger**: o GitHub é a única fonte do site.
 5. Depois, confira no site oficial (janela anônima). Se aparecer versão antiga, limpar o cache da CDN na Hostinger.
 6. Plano B, se a tarefa automática falhar: o usuário envia só os arquivos que mudaram pelo Gerenciador de Arquivos, para `public_html` (imagens em `public_html/assets`), escolhendo "Replace all". Não use .zip.
