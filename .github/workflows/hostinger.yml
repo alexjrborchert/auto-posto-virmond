@@ -1,0 +1,33 @@
+# Publica o site na Hostinger (https://paradavirmond.com.br) a cada alteração
+# aprovada na branch main. Envia por FTP só os arquivos de dist/ que mudaram.
+# A senha e o usuário do FTP ficam nos segredos do repositório:
+# Settings > Secrets and variables > Actions > FTP_USERNAME e FTP_PASSWORD.
+name: Publicar na Hostinger
+
+on:
+  push:
+    branches: [main]
+    paths: ['dist/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hostinger
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 185.239.210.12
+          port: 21
+          protocol: ftps
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: public_html/

@@ -4,7 +4,7 @@ Landing page estática de conceito para reunir o posto e o restaurante em uma ex
 
 ## Site no ar
 
-https://paradavirmond.com.br, hospedado na Hostinger (domínio no Registro.br, DNS apontando para `athena`/`apollo.dns-parking.com`). Para atualizar, envie só os arquivos de `dist/` que mudaram para `public_html` pelo Gerenciador de Arquivos (imagens em `public_html/assets`). Não use .zip. O passo a passo completo está no `CLAUDE.md`.
+https://paradavirmond.com.br, hospedado na Hostinger (domínio no Registro.br, DNS apontando para `athena`/`apollo.dns-parking.com`). A publicação é automática: cada alteração em `dist/` que entra na branch `main` é enviada por FTP para `public_html` (`.github/workflows/hostinger.yml`). O passo a passo completo está no `CLAUDE.md`.
 
 O endereço antigo da prévia (https://alexjrborchert.github.io/auto-posto-virmond/) só redireciona para o site oficial (`redirect/` e `.github/workflows/pages.yml`).
 

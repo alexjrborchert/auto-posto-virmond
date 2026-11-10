@@ -61,10 +61,12 @@ Converse em português do Brasil. O celular é a prioridade: toda mudança visua
 
 ### Como publicar uma alteração
 
-1. Commit e push no GitHub (repositório `alexjrborchert/auto-posto-virmond`, branch `main`).
-2. O usuário envia **só os arquivos que mudaram** pelo Gerenciador de Arquivos da Hostinger, para `public_html` (imagens em `public_html/assets`), escolhendo "Replace all". Sempre diga exatamente quais arquivos enviar.
-3. **Não use .zip.** O extrator do Gerenciador de Arquivos exige criar uma subpasta.
-4. Depois, confira no site oficial.
+1. Commit e push no GitHub (repositório `alexjrborchert/auto-posto-virmond`). A alteração entra na branch `main` (direto ou aprovando um pull request).
+2. A tarefa automática `.github/workflows/hostinger.yml` envia por FTP (FTPS, porta 21, servidor 185.239.210.12) só os arquivos de `dist/` que mudaram para `public_html`. Roda a cada push na `main` que mexe em `dist/`, e também pode ser disparada à mão na aba Actions.
+3. Usuário e senha do FTP ficam nos segredos do repositório (`FTP_USERNAME` e `FTP_PASSWORD`). Nunca pedir a senha na conversa. Se a senha do FTP mudar na Hostinger, atualizar o segredo.
+4. **Não editar arquivos direto na Hostinger**: o GitHub é a única fonte do site.
+5. Depois, confira no site oficial (janela anônima). Se aparecer versão antiga, limpar o cache da CDN na Hostinger.
+6. Plano B, se a tarefa automática falhar: o usuário envia só os arquivos que mudaram pelo Gerenciador de Arquivos, para `public_html` (imagens em `public_html/assets`), escolhendo "Replace all". Não use .zip.
 
 - O endereço antigo da prévia (alexjrborchert.github.io/auto-posto-virmond) só redireciona para o site oficial (`redirect/` e `.github/workflows/pages.yml`).
 - Mensagens de commit terminam com `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
@@ -76,5 +78,4 @@ Converse em português do Brasil. O celular é a prioridade: toda mudança visua
 - [ ] **Google Search Console:** propriedade do tipo Domínio, com um registro TXT na zona DNS da Hostinger; depois enviar `sitemap.xml`. Ficou para quando o usuário tiver acesso à conta Google certa (pode ser a dele, adicionando o cliente como proprietário).
 - [ ] **Link do site nos perfis:** colocar https://paradavirmond.com.br nos perfis do Google (posto e restaurante) e nos Instagram. É o cliente ou o usuário que faz isso nas contas.
 - [ ] **Unificação** dos perfis do Google e do Instagram sob "Parada Virmond", quando o cliente decidir. Depois, atualizar os links do site.
-- [ ] **Registro TXT "parada-virmond"** na zona DNS da Hostinger: foi criado só para teste e pode ser apagado.
 - [ ] **Foto da capa em tamanho original**, se o cliente tiver.
