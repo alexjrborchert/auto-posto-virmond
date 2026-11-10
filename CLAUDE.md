@@ -62,7 +62,7 @@ Converse em português do Brasil. O celular é a prioridade: toda mudança visua
 ### Como publicar uma alteração
 
 1. Commit e push no GitHub (repositório `alexjrborchert/auto-posto-virmond`). A alteração entra na branch `main` (direto ou aprovando um pull request).
-2. A tarefa automática `.github/workflows/hostinger.yml` envia por FTP (FTPS, porta 21, servidor 185.239.210.12) só os arquivos de `dist/` que mudaram para `public_html`. Roda a cada push na `main` que mexe em `dist/`, e também pode ser disparada à mão na aba Actions.
+2. A tarefa automática `.github/workflows/hostinger.yml` envia por FTP (FTPS, porta 21, servidor 185.239.210.12) só os arquivos de `dist/` que mudaram para `public_html`. No FTP, o caminho é `domains/paradavirmond.com.br/public_html/` (a raiz do FTP é a pasta da conta, não a do site; a primeira tentativa, com `public_html/`, criou uma pasta solta na raiz do FTP, que não aparece no Gerenciador de Arquivos e não afeta o site). Roda a cada push na `main` que mexe em `dist/`, e também pode ser disparada à mão na aba Actions.
 3. Usuário e senha do FTP ficam nos segredos do repositório (`VIRMOND_HOSTINGER_FTP_USUARIO` e `VIRMOND_HOSTINGER_FTP_SENHA`). Nunca pedir a senha na conversa. Se a senha do FTP mudar na Hostinger, atualizar o segredo.
 4. **Não editar arquivos direto na Hostinger**: o GitHub é a única fonte do site.
 5. Depois, confira no site oficial (janela anônima). Se aparecer versão antiga, limpar o cache da CDN na Hostinger.

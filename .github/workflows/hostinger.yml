@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.VIRMOND_HOSTINGER_FTP_USUARIO }}
           password: ${{ secrets.VIRMOND_HOSTINGER_FTP_SENHA }}
           local-dir: ./dist/
-          server-dir: public_html/
+          server-dir: domains/paradavirmond.com.br/public_html/
