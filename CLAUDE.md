@@ -11,7 +11,7 @@ Converse em português do Brasil. O celular é a prioridade: toda mudança visua
 - Título da aba, `og:title` e rodapé: **"Parada Virmond – Posto, Conveniência e Restaurante"**. Copyright: "© 2026 Parada Virmond".
 - O posto continua como **Auto Posto Virmond** (nome registrado).
 - **O restaurante aparece só como "Restaurante".** O cliente não tem registro de "Restaurante Virmond" nem de "Restaurante Posto Virmond". Única exceção: no JSON-LD o nome é "Restaurante da Parada Virmond", para o Google saber de qual restaurante se trata.
-- Legenda da dobra posto × restaurante: "PARADA VIRMOND · POSTO × RESTAURANTE" (antes era "AUTO POSTO × RESTAURANTE · VIRMOND", que lia como "Restaurante Virmond"). Evite colocar "Virmond" logo depois de "Restaurante".
+- Dobra posto × restaurante: sem legenda no canto (a antiga "AUTO POSTO × RESTAURANTE · VIRMOND" lia como "Restaurante Virmond" e foi removida). "Duas essências, uma só parada" fica embaixo do título, centralizada sob ele. Evite colocar "Virmond" logo depois de "Restaurante".
 - **Nunca usar "Cantagalo"** (nome antigo do restaurante). Ele foi apagado até da placa na foto antiga da capa.
 
 ## Textos e conteúdo
