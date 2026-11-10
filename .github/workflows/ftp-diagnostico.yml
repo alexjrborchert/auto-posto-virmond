@@ -1,0 +1,44 @@
+# Só leitura: mostra onde o FTP começa e quais pastas existem,
+# para achar o caminho certo da pasta do site. Rodar à mão na aba Actions.
+name: Diagnóstico do FTP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Listar pastas do FTP
+        env:
+          FTP_USUARIO: ${{ secrets.VIRMOND_HOSTINGER_FTP_USUARIO }}
+          FTP_SENHA: ${{ secrets.VIRMOND_HOSTINGER_FTP_SENHA }}
+        run: |
+          python3 - <<'PY'
+          import os, ftplib
+          ftp = ftplib.FTP_TLS('185.239.210.12', timeout=30)
+          ftp.login(os.environ['FTP_USUARIO'], os.environ['FTP_SENHA'])
+          ftp.prot_p()
+          print('Pasta inicial do FTP:', ftp.pwd())
+          def listar(caminho, nivel=0, max_nivel=4):
+              try:
+                  itens = list(ftp.mlsd(caminho, facts=['type', 'size', 'modify']))
+              except Exception as e:
+                  print('  ' * nivel + f'[erro ao abrir {caminho}: {e}]')
+                  return
+              for nome, f in sorted(itens):
+                  if nome in ('.', '..') or f.get('type') in ('cdir', 'pdir'):
+                      continue
+                  cam = f'{caminho.rstrip("/")}/{nome}'
+                  if f.get('type') == 'dir':
+                      print('  ' * nivel + f'[pasta] {cam}')
+                      if nivel < max_nivel and nome != 'assets':
+                          listar(cam, nivel + 1, max_nivel)
+                  elif nome in ('index.html', '.ftp-deploy-sync-state.json', 'DO_NOT_UPLOAD_HERE'):
+                      print('  ' * nivel + f'{cam}  {f.get("size")} bytes  {f.get("modify")}')
+          listar(ftp.pwd())
+          ftp.quit()
+          PY
