@@ -39,6 +39,6 @@ jobs:
                           listar(cam, nivel + 1, max_nivel)
                   elif nome in ('index.html', '.ftp-deploy-sync-state.json', 'DO_NOT_UPLOAD_HERE'):
                       print('  ' * nivel + f'{cam}  {f.get("size")} bytes  {f.get("modify")}')
-          listar(ftp.pwd())
+          listar('/', 0, 3)
           ftp.quit()
           PY

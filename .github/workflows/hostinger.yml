@@ -22,6 +22,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Trava de segurança: só publica se a pasta do site for a certa
+      # (a que tem o arquivo DO_NOT_UPLOAD_HERE ao lado da public_html).
+      - name: Conferir a pasta do site
+        env:
+          FTP_USUARIO: ${{ secrets.VIRMOND_HOSTINGER_FTP_USUARIO }}
+          FTP_SENHA: ${{ secrets.VIRMOND_HOSTINGER_FTP_SENHA }}
+        run: |
+          python3 - <<'PY'
+          import os, sys, ftplib
+          ftp = ftplib.FTP_TLS('185.239.210.12', timeout=30)
+          ftp.login(os.environ['FTP_USUARIO'], os.environ['FTP_SENHA'])
+          ftp.prot_p()
+          print('Pasta inicial do FTP:', ftp.pwd())
+          print('Raiz do FTP:', sorted(ftp.nlst('/')))
+          site = '/domains/paradavirmond.com.br'
+          try:
+              itens = [n.rsplit('/', 1)[-1] for n in ftp.nlst(site)]
+          except ftplib.all_errors as e:
+              sys.exit(f'Pasta {site} não encontrada: {e}')
+          print(site, sorted(itens))
+          if 'public_html' not in itens or 'DO_NOT_UPLOAD_HERE' not in itens:
+              sys.exit('Não parece a pasta do site. Nada foi enviado.')
+          ftp.quit()
+          PY
       - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 185.239.210.12
@@ -30,4 +54,4 @@ jobs:
           username: ${{ secrets.VIRMOND_HOSTINGER_FTP_USUARIO }}
           password: ${{ secrets.VIRMOND_HOSTINGER_FTP_SENHA }}
           local-dir: ./dist/
-          server-dir: public_html/
+          server-dir: /domains/paradavirmond.com.br/public_html/
