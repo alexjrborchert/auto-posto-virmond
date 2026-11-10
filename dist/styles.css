@@ -38,3 +38,6 @@
 .hero{display:flex;flex-direction:column;height:auto;min-height:min(930px,100svh)}.hero-content{flex:1 0 auto;padding-bottom:64px}.hero-bottom{position:relative;bottom:auto;padding-bottom:37px}
 @media(max-height:800px) and (min-width:821px){.hero{min-height:max(690px,100svh)}.hero-bottom{padding-bottom:20px}}
 @media(max-width:560px){.hero{height:780px;min-height:0}.hero-content{padding-bottom:40px}.hero-bottom{padding-bottom:23px}}
+/* Dobra posto × restaurante: "Duas essências" legível sobre a foto do posto */
+.duo-content{text-shadow:0 2px 16px rgba(0,0,0,.5)}.duo-content .eyebrow{display:inline-block;font-size:12px;padding:7px 12px;border-radius:2px;background:rgba(9,24,18,.72);text-shadow:none}
+@media(max-width:560px){.duo-content .eyebrow{font-size:10px;padding:6px 10px}}
